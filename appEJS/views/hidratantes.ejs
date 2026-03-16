@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #f0f8ff;
+            box-shadow: 0 2px 8px rgba(100, 149, 237, 0.15);
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        th, td {
+            padding: 12px 18px;
+            text-align: left;
+        }
+        th {
+            background: #add8e6;
+            color: #1e90ff;
+            font-weight: bold;
+            border-bottom: 2px solid #87ceeb;
+        }
+        tr:nth-child(even) {
+            background: #e6f2ff;
+        }
+        tr:nth-child(odd) {
+            background: #f0f8ff;
+        }
+        td {
+            border-bottom: 1px solid #87ceeb;
+            color: #4682b4;
+        }
+    </style>
+
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Bem vindo a página de <%= title %></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Marca</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nivea Soft</td>
+                    <td>Nivea</td>
+                    <td>R$ 25,00</td>
+                </tr>
+                <tr>
+                    <td>Neutrogena Hydro Boost</td>
+                    <td>Neutrogena</td>
+                    <td>R$ 60,00</td>
+                </tr>
+                <tr>
+                    <td>CeraVe Moisturizing Cream</td>
+                    <td>CeraVe</td>
+                    <td>R$ 80,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

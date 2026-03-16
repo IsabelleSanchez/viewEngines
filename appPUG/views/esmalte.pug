@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1= title
+  p Bem vindo a página de #{title}
+    p Aqui você encontra os melhores esmaltes para suas unhas!
+    table(style="width:60%; margin-top:20px; border-collapse:collapse;")
+        thead
+            tr(style="background-color:#f8f8f8;")
+                th(style="padding:10px; border:1px solid #ccc;") Nome
+                th(style="padding:10px; border:1px solid #ccc;") Cor
+                th(style="padding:10px; border:1px solid #ccc;") Código Hex
+        tbody
+            tr
+                td(style="padding:10px; border:1px solid #ccc;") Rosa Chiclete
+                td(style="background-color:#ff69b4; color:#fff; padding:10px; border:1px solid #ccc;") 
+                    | 
+                td(style="padding:10px; border:1px solid #ccc;") #ff69b4
+            tr
+                td(style="padding:10px; border:1px solid #ccc;") Azul Celeste
+                td(style="background-color:#87ceeb; color:#333; padding:10px; border:1px solid #ccc;") 
+                    | 
+                td(style="padding:10px; border:1px solid #ccc;") #87ceeb
+            tr
+                td(style="padding:10px; border:1px solid #ccc;") Vermelho Rubi
+                td(style="background-color:#c0392b; color:#fff; padding:10px; border:1px solid #ccc;") 
+                    | 
+                td(style="padding:10px; border:1px solid #ccc;") #c0392b

@@ -3,10 +3,75 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+      table {
+        width: 80%;
+        margin: 30px auto;
+        border-collapse: collapse;
+        background-color: #f8f6fa;
+        box-shadow: 0 2px 8px rgba(180, 180, 200, 0.15);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      th, td {
+        padding: 14px 18px;
+        text-align: left;
+      }
+      thead {
+        background-color: #e3d7f3;
+      }
+      th {
+        color: #5d4b6a;
+        font-weight: 600;
+        font-size: 1.1em;
+        border-bottom: 2px solid #d1c4e9;
+      }
+      tbody tr {
+        background-color: #f3f0fa;
+        transition: background 0.2s;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #e9f7fa;
+      }
+      tbody tr:hover {
+        background-color: #fce4ec;
+      }
+      td {
+        color: #6a5d7b;
+        font-size: 1em;
+        border-bottom: 1px solid #ede7f6;
+      }
+    </style>
   </head>
   <body>
     <h1><%= title %></h1>
     <h2>Bem vindo a nossa página de autocuidado!</h2>
     <p>Confira nossas promoções em produtos capilares!</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Descrição</th>
+          <th>Preço Promocional</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Shampoo Nutritivo</td>
+          <td>Limpeza suave e hidratação intensa para todos os tipos de cabelo.</td>
+          <td>R$ 19,90</td>
+        </tr>
+        <tr>
+          <td>Máscara Capilar</td>
+          <td>Reconstrução profunda e brilho imediato.</td>
+          <td>R$ 29,90</td>
+        </tr>
+        <tr>
+          <td>Óleo Reparador</td>
+          <td>Proteção térmica e reparação das pontas duplas.</td>
+          <td>R$ 15,90</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>

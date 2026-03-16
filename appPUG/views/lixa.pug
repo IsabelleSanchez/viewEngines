@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p Bem vindo a página de #{title}
+    p Aqui você encontra as melhores lixas para suas unhas!
+    table(style="width:60%; margin-top:20px; border-collapse:collapse;")
+        thead
+            tr(style="background-color:#f8f8f8;")
+                th(style="padding:10px; border:1px solid #ccc;") Tipo
+                th(style="padding:10px; border:1px solid #ccc;") Descrição
+        tbody
+            tr
+                td(style="padding:10px; border:1px solid #ccc;") Lixa de Unha Tradicional
+                td(style="padding:10px; border:1px solid #ccc;") Lixa clássica, ideal para modelar e dar forma às unhas.
+            tr
+                td(style="padding:10px; border:1px solid #ccc;") Lixa de Vidro
+                td(style="padding:10px; border:1px solid #ccc;") Lixa durável e fácil de limpar, perfeita para um acabamento suave.
+            tr
+                td(style="padding:10px; border:1px solid #ccc;") Lixa Elétrica
+                td(style="padding:10px; border:1px solid #ccc;") Lixa motorizada, ideal para profissionais ou uso doméstico avançado.

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #fff6f9;
+            box-shadow: 0 2px 8px rgba(220, 120, 180, 0.15);
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        th, td {
+            padding: 12px 18px;
+            text-align: left;
+        }
+        th {
+            background: #f8d7e8;
+            color: #a34b7b;
+            font-weight: bold;
+            border-bottom: 2px solid #e5b3c6;
+        }
+        tr:nth-child(even) {
+            background: #fbeff5;
+        }
+        tr:nth-child(odd) {
+            background: #fff6f9;
+        }
+        td {
+            border-bottom: 1px solid #e5b3c6;
+            color: #7c3a5c;
+        }
+    </style>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Bem vindo a página de <%= title %></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Marca</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chanel No. 5</td>
+                <td>Chanel</td>
+                <td>R$ 450,00</td>
+            </tr>
+            <tr>
+                <td>Acqua di Gio</td>
+                <td>Giorgio Armani</td>
+                <td>R$ 380,00</td>
+            </tr>
+            <tr>
+                <td>La Vie Est Belle</td>
+                <td>Lancôme</td>
+                <td>R$ 420,00</td>
+            </tr>
+        </tbody>
+    </table>
+  </body>
+</html>
