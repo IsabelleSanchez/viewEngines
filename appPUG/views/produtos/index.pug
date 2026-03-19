@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  .produtos-page
+    h1 Lista de Produtos
+    p.lead Confira preços e escolha sua unha favorita!
+    .produtos-grid
+      each item in produtos
+        .card
+          h2 #{item.nome}
+          p Preço: R$ #{item.preco.toFixed(2)}
+          button Comprar
