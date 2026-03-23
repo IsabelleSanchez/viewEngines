@@ -56,29 +56,30 @@ body {
   box-shadow: 0 14px 30px rgba(164, 41, 101, 0.2);
 }
 
-.card-image {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-  display: block;
+.card-header {
+  padding: 14px 14px 0;
 }
 
-.card-content {
-  padding: 14px;
-}
-
-.card-content h2 {
+.card-title {
   margin: 0 0 6px;
   font-size: 1.05rem;
   color: #7c1d57;
 }
 
-.card-content p {
+.card-body {
+  padding: 0 14px;
+}
+
+.card-price {
   margin: 0 0 10px;
   color: #4d2e4f;
 }
 
-.card-content button {
+.card-footer {
+  padding: 0 14px 14px;
+}
+
+.btn-comprar {
   border: none;
   background: #f06ea1;
   color: white;
@@ -89,7 +90,7 @@ body {
   transition: background-color 0.2s ease;
 }
 
-.card-content button:hover {
+.btn-comprar:hover {
   background: #c74d82;
 }
 

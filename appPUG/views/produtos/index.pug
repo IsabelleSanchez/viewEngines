@@ -1,12 +1,16 @@
 extends ../layout
 
 block content
-  .produtos-page
-    h1 Lista de Produtos
-    p.lead Confira preços e escolha sua unha favorita!
-    .produtos-grid
+  main.produtos-page
+    header.page-header
+      h1.title Lista de Produtos
+      p.lead Confira preços e escolha sua unha favorita!
+    section.produtos-grid
       each item in produtos
-        .card
-          h2 #{item.nome}
-          p Preço: R$ #{item.preco.toFixed(2)}
-          button Comprar
+        article.card
+          header.card-header
+            h2.card-title #{item.nome}
+          .card-body
+            p.card-price Preço: R$ #{item.preco.toFixed(2)}
+          footer.card-footer
+            button.btn-comprar(type="button") Comprar
